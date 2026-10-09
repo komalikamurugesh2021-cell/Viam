@@ -1,0 +1,19 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "mightyjaderobot:palletizer-102",
+  "models": [
+    {
+      "api": "rdk:service:generic",
+      "model": "mightyjaderobot:palletizer-102:palletizer",
+      "markdown_link": "mightyjaderobot_palletizer-102_palletizer.md"
+    }
+  ],
+  "description": "Autonomous palletizer service for picking and placing boxes in a palletizing workcell",
+  "entrypoint": "./dist/main",
+  "build": {
+    "setup": "./setup.sh",
+    "build": "./build.sh",
+    "path": "dist/archive.tar.gz"
+  },
+  "visibility": "private"
+}
